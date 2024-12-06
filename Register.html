@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INVEXTECH SIGNUP</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="/download (1).jpeg" type="image/x-icon"> 
+</head>
+<body>
+  <div class="login-container">
+    <form id="registrationForm" class="login-form">
+      <img src="/download (1).jpeg" alt="Signup Icon" class="login-image">
+      <h2>Sign Up</h2>
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your Full name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      </div>
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+      </div>
+      <div class="form-group">
+        <label for="role">User Role</label>
+        <select id="role" name="role" required>
+          <option value="" disabled selected>Select your role</option>
+          <option value="BDO">BDO</option>
+          <option value="Frontend Developer">Frontend Developer</option>
+          <option value="Full-Stack Developer">Full-Stack Developer</option>
+          <option value="Graphic Designer">Graphic Designer</option>
+          <option value="UI/UX Designer">UI/UX Designer</option>
+          <option value="HR">HR</option>
+          <option value="SEO">SEO</option>
+        </select>
+      </div>
+      <button type="submit" class="btn">Register</button>
+    </form>
+  </div>
+  <div id="messageModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img src="/download (1).jpeg" alt="Modal Image" class="modal-image">
+      <p id="modalMessage"></p>
+      <button id="redirectButton" style="display:none;padding: 9px;background-color: #2ba6e3;font-weight: 700;border-radius: 20px; width:130px ;">Redirect to login</button>
+    </div>
+  </div>
+  <script src="register.js"></script>
+</body>
+</html>
